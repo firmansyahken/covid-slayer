@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0c0c0c;
+}
+
+#game {
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gameover {
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    background-color: rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.gameover .gameover_main {
+    width: 100%;
+    text-align: center;
+}
+
+.gameover .gameover_main h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: white;
+    text-shadow: 0px 0px 24px #7A4AFA;
+}
+
+.gameover .gameover_main p {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.gameover .gameover_main h2 {
+    font-size: 32px;
+    line-height: 48px;
+    color: #129BFF;
+    text-shadow: 0px 0px 24px #129BFF;
+    margin-bottom: 20px;
+}
+
+.gameover .gameover_main button {
+    border: none;
+    border: 2px solid #129BFF;
+    outline: none;
+    padding: 5px 25px;
+    background-color: #129BFF;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.counting {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #0c0c0c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.counting h1 {
+    font-size: 50px;
+}
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #0c0c0c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.preloader h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.preloader button {
+    border: none;
+    border: 2px solid #129BFF;
+    outline: none;
+    padding: 10px 40px;
+    background-color: transparent;
+    color: #129BFF;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: .3s;
+    margin-top: 20px;
+}
+
+.preloader button:hover {
+    background-color: #129BFF;
+    color: white;
+    transform: translateY(-5px);
+}

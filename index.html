@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Slayer</title>
+    <link rel="shortcut icon" href="asset/omicron.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="gameover">
+        <div class="gameover_main">
+            <h1>GAME OVER</h1>
+            <p>Your Score</p>
+            <h2 id="score"></h2>
+            <button onclick="window.location.reload()">Reset</button>
+        </div>
+    </div>
+
+    <div class="counting">
+        <h1 id="count">3</h1>
+    </div>
+
+    <div class="preloader">
+        <h1>Covid Slayer</h1>
+        <p>W, D untuk gerak kanan-kiri</p>
+        <p>Klik kiri untuk menembak </p>
+        <button id="play">Play</button>
+    </div>
+
+    <canvas id="game"></canvas>
+    
+    <script src="main.js"></script>
+
+    <!-- <audio autoplay src="asset/bs.mp3"></audio> -->
+
+</body>
+</html>
